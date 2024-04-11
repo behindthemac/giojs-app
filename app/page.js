@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import * as GIO from "giojs";
+import data from "./sampleData";
 
 const initCountry = "JP";
 
@@ -14,6 +15,8 @@ const GioComponent = () => {
         initCountry,
       },
     });
+
+    controller.addData(data);
 
     controller.init();
   }, []);
