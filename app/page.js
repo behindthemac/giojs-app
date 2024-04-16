@@ -21,7 +21,7 @@ const GioComponent = () => {
     controller.init();
   }, []);
 
-  return <div style={{ width: 1440, height: 800 }} ref={ref} />;
+  return <div style={{ width: '100%', height: '100vh' }} ref={ref} />;
 }
 
 export default GioComponent;
